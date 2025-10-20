@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | MyResume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-about">
+  <div class="page-transition"></div>
+
+  <nav class="navbar">
+    <div class="brand"><a href="index.html">MyResume</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="resume.html">Resume Builder</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkToggleTop" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero mini">
+      <div class="hero-content">
+        <h1>About MyResume</h1>
+        <p class="muted">We make resume building painless and stylish. Focus on your experience, not formatting.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>How it works</h2>
+      <ol class="timeline">
+        <li><strong>Enter details</strong> — Add your info in the form.</li>
+        <li><strong>Customize</strong> — Pick template, colors, and upload your photo.</li>
+        <li><strong>Export</strong> — Print or save as PDF from your browser.</li>
+      </ol>
+
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <button class="acc-btn">Can I download a PDF? <span class="acc-icon">+</span></button>
+        <div class="acc-panel">Yes — use the "Download PDF" button which triggers your browser print dialog.</div>
+
+        <button class="acc-btn">Is my data stored anywhere? <span class="acc-icon">+</span></button>
+        <div class="acc-panel">No servers — everything is saved locally in your browser via localStorage.</div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTopA" class="back-to-top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

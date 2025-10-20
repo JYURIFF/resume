@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyResume — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-home">
+  <div class="page-transition"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="brand"><a href="index.html">MyResume</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume Builder</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkToggle" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Animated hero with floating shapes -->
+  <header class="hero">
+    <div class="hero-shapes">
+      <span class="shape s1"></span>
+      <span class="shape s2"></span>
+      <span class="shape s3"></span>
+      <span class="shape s4"></span>
+      <span class="shape s5"></span>
+    </div>
+
+    <div class="hero-content">
+      <h1><span id="typed">Build a Modern Resume.</span></h1>
+      <p class="muted">Fast, clean, and beautifully crafted templates — update live and export to PDF.</p>
+      <div class="cta">
+        <a class="btn" href="resume.html">Start Now</a>
+        <a class="btn btn-ghost" href="#features">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Features -->
+    <section id="features" class="content">
+      <h2 class="section-title">What you get</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>3 Templates</h3>
+          <p>Classic, Modern and Minimal — switch on the fly.</p>
+        </div>
+        <div class="card">
+          <h3>Live Preview</h3>
+          <p>Instant updates while you type — no reloads.</p>
+        </div>
+        <div class="card">
+          <h3>Save Locally</h3>
+          <p>Your work stays in your browser using local storage.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="content alt">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial">“MyResume helped me land the interview — easy and beautiful!”<span>— Alex</span></div>
+        <div class="testimonial">“Templates look sharp. PDF export worked flawlessly.”<span>— Jamie</span></div>
+      </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section class="content">
+      <div class="cta-cta">
+        <h3>Ready to build your resume?</h3>
+        <a class="btn" href="resume.html">Create Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume Builder | MyResume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-resume">
+  <div class="page-transition"></div>
+
+  <nav class="navbar">
+    <div class="brand"><a href="index.html">MyResume</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html" class="active">Resume Builder</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkToggleResume" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main class="resume-main">
+    <aside class="controls">
+      <div class="controls-inner">
+        <h2>Create Resume</h2>
+
+        <label class="field">
+          <span>Name</span>
+          <input id="name" type="text" placeholder="Full name">
+        </label>
+
+        <label class="field">
+          <span>Job Title</span>
+          <input id="title" type="text" placeholder="e.g. Frontend Developer">
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input id="email" type="email" placeholder="you@example.com">
+        </label>
+
+        <label class="field">
+          <span>Phone</span>
+          <input id="phone" type="text" placeholder="+63 ...">
+        </label>
+
+        <label class="field">
+          <span>Profile photo</span>
+          <input id="photo" type="file" accept="image/*">
+        </label>
+
+        <label class="field">
+          <span>Summary</span>
+          <textarea id="summary" rows="3" placeholder="A short professional summary..."></textarea>
+        </label>
+
+        <label class="field">
+          <span>Skills (comma separated)</span>
+          <input id="skills" placeholder="HTML, CSS, JavaScript">
+        </label>
+
+        <label class="field">
+          <span>Experience</span>
+          <textarea id="experience" rows="4" placeholder="Work experience details..."></textarea>
+        </label>
+
+        <div class="option-row">
+          <label><input type="radio" name="template" value="modern" checked> Modern</label>
+          <label><input type="radio" name="template" value="classic"> Classic</label>
+          <label><input type="radio" name="template" value="minimal"> Minimal</label>
+        </div>
+
+        <div class="option-row">
+          <label for="accent">Accent color</label>
+          <input id="accent" type="color" value="#007bff">
+        </div>
+
+        <div class="control-actions">
+          <button id="saveBtn" class="btn">Save</button>
+          <button id="loadBtn" class="btn btn-ghost">Load</button>
+          <button id="resetBtn" class="btn btn-danger">Reset</button>
+        </div>
+
+        <div class="control-actions">
+          <button id="printBtn" class="btn">Download PDF</button>
+          <button id="previewOnlyBtn" class="btn btn-ghost">Toggle Print Style</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="preview-wrap">
+      <div id="preview" class="resume-preview modern">
+        <header class="rp-header">
+          <div class="rp-left">
+            <div id="rp-photo" class="rp-photo" style="background-image:url('assets/placeholder-avatar.png')"></div>
+            <div>
+              <h1 id="r-name">Your Name</h1>
+              <p id="r-title" class="muted">Job Title</p>
+            </div>
+          </div>
+          <div class="rp-contact">
+            <p id="r-email">you@example.com</p>
+            <p id="r-phone">+63 ...</p>
+          </div>
+        </header>
+
+        <section class="rp-section">
+          <h3>Profile</h3>
+          <p id="r-summary">A short professional summary will appear here.</p>
+        </section>
+
+        <section class="rp-section">
+          <h3>Skills</h3>
+          <ul id="r-skills" class="skill-list"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+        </section>
+
+        <section class="rp-section">
+          <h3>Experience</h3>
+          <div id="r-experience">Add your experience here.</div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTopR" class="back-to-top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

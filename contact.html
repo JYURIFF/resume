@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | MyResume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page-contact">
+  <div class="page-transition"></div>
+
+  <nav class="navbar">
+    <div class="brand"><a href="index.html">MyResume</a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.html">Resume Builder</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="darkToggleContact" class="icon-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero mini">
+      <div class="hero-content">
+        <h1>Contact</h1>
+        <p class="muted">Questions, feedback, or feature requests? Drop us a message.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <form id="contactForm" class="contact-form">
+        <label><input id="cname" placeholder="Your name" required></label>
+        <label><input id="cemail" type="email" placeholder="Your email" required></label>
+        <label><textarea id="cmessage" rows="6" placeholder="Message" required></textarea></label>
+        <div><button type="submit" class="btn">Send Message</button></div>
+      </form>
+
+      <div class="contact-info">
+        <p>Email: <a href="mailto:hello@myresume.example">hello@myresume.example</a></p>
+        <p>Location: Philippines</p>
+        <div class="socials">
+          <a href="#">LinkedIn</a> • <a href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTopC" class="back-to-top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
